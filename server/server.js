@@ -14,7 +14,7 @@ const noteSchema = new mongoose.Schema({
 
 const Notes = mongoose.model("Notes", noteSchema);
 
-mongoose.connect("");
+mongoose.connect("mongodb+srv://admin:JaGJ5ibEMDpvDz59@cluster0.sdxzvjw.mongodb.net/notesDB");
 
 app.use("/", require("./routes/noteRoute"));
 
